@@ -12,51 +12,312 @@
 
 <body>
 
-<!--START  navigation module here --> <nav class="navbar navbar-dark navbar-expand-md fixed-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><h2><img src="images/fb.png">Function Book</h2></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#menu">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="menu">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#personOne">Person-1name</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#personTwo">Person-2name</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#personThree">Person-3name</a>
-				</li>
-				
-			</ul>
-		</div>		
+<!--START  navigation module here --><!-- start navigation --><nav  class=" navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><h2><img src="data:image/jpeg;base64,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">ASTATINE</h2></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+	     <span class="navbar-toggler-icon"></span>
+	</button>
+	
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+	     <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.google.co.in">GOOGLE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.youtube.com">YOUTUBE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.instagram.com">INSTA</a>
+			</li>
+			
+		</ul>
 	</div>
-</nav>	
+</nav>		<!-- end navigation -->	
 
 <!--END  navigation module here --> 
 
 <!--START CAROUSEL MODULES-->
+<!-- start carousel --><br>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="file:///E:/photos/download (2).jpg" class="d-block w-100" alt="cambridge institute of technology top college in bangalore">
+      </div>
+      <div class="carousel-item">
+        <img src="file:///E:/photos/IMG-20201022-WA0006.jpg" class="d-block w-100" alt="cambridge institute of technology top college in bangalore">
+      </div>
+      <div class="carousel-item">
+        <img src="file:///E:/photos/IMG_20201022_173554.jpg" class="d-block w-100" alt="citech best engineering college">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span></a>
+  </div>	<!-- end carousel --></br>		
+  
 <!--END CAROUSEL MODULES-->
 
-<!--START THREE PHOTO MODULES-->
+<!--START THREE PHOTO MODULES--><!-- Start Three photo section-->
+
+<!-- Start Three photo section-->
+<div id="threePhotoSection">
+    <h3 class="heading text-center">TEAM ASTATINE</h3>
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img class="card-img-top" src="file:///E:/photos/COLOR_POP.jpg" alt="Super College with sports">
+          <div class="card-body">
+            <h4>MAITHREYA</h4>
+            <p>"SUCCESS IS A JOURNEY "</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img class="card-img-top" src="file:///E:/photos/TEJAS.jpeg" alt="best Co-ed college in Bangalore">
+          <div class="card-body">
+            <h4>TEJAS PACHIPULUSULA</h4>
+            <p>"ALL IS WELL "</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img class="card-img-top" src="file:///E:/photos/PRAJAWAL.jpeg" alt="college with hostel in bangalore">
+          <div class="card-body">
+            <h4>PRAJAWAL</h4>
+            <p>"BELIEVE IN YOURSELF!!"</p>
+          </div>
+        </div>
+        
+      </div>
+    </div><!--End of row -->
+  </div>
+  <!--End of Three photo section -->
+  
 <!--END OF THREE PHOTO MODULES-->
 
 <!--START OF PARAGRAPH MODULES-->
+
+<!-- Start MOREABOUTUS Section -->
+<div id="moreAboutUs" >
+    <!--Start jumbotron -->
+    <div class="jumbotr0on">
+            <div class="col-12 text-center">
+                <h3 class="heading">More about us</h3>
+                <div class="heading-underline"></div>
+            </div>
+            
+            <div class="row">
+                <div id="personOne" class="col-md-12 clients">
+                    <div class="row">
+                            
+                            <div class="col-md-8">
+                                <blockquote>
+                                    <i class="fas fa-quote-left"></i>
+                                    Myself MAITHREYA, pursuing BE 3RD SEM in RNS INSTITUTE OF TECHNOLOGY.
+                                    Area of insterest: BIG DATA ANALYTICS
+
+                                    -A SMALL LEARNER
+                                    <cite>&#8212; Eric, Small Business Owner</cite>
+                                </blockquote>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <img  class="img-thumbnail mx-auto d-block" width="152" height="113" src="file:///E:/photos/COLOR_POP.jpg">
+                            </div>
+                    </div>
+                </div>
+                <div id="personTwo" class="col-md-12 clients">
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <img  class="img-thumbnail mx-auto d-block" width="152" height="113" src="file:///E:/photos/TEJAS.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <blockquote>
+                                    <i class="fas fa-quote-left"></i>
+                                Myself TEJAS PACHIPULUSALA,studing BE 3RD SEM in RNS INSTIUTE OF TECHNOLOGY.                            
+                                    <cite>&#8212; Eric, Small Business Owner</cite>
+                                </blockquote>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div  id="personThree" class="col-md-12 clients">
+                    <div class="row">
+                            
+                            <div class="col-md-8">
+                                <blockquote>
+                                    <i class="fas fa-quote-left"></i>
+                                    My name is PRAJWAL but I'd like to be called as Sara. I'm 29 years old and a married woman. I'm the second child and the only girl among my 3 brothers in my nuclear family. I'm very closed with my parents and all of my siblings especially with my youngest brother since he lived with me and my husband.
+    
+    I think my family tree is unique because I have a cross-cultural extended family. I have uncles and aunts (from my father side) with a different religious beliefs and cultures which are Christian, Buddhist, Hindu and Pagan. Therefore, we always had a great time gathering together especially when it comes to a festival and celebration days like on Eid Al-Fitr, Christmas, Chinese New Year, Diwali and wedding ceremonies as well. In fact, this is a common situation in my country especially in my home town.
+    
+    Malaysia actually has two regions which are Peninsular Malaysia and Malaysian Borneo (also known as East Malaysia) and they're separated by South China Sea. I live in Sabah which is situated in Borneo. In my country, Sabah is also known as ‘A Land below the Wind'. We have several of mountains along with a green mountain ranges and natural lifes. We also have lots of beautiful island and white sandy beaches along our coast. It's a right destination for people who love snorkeling or scuba diving.
+    
+    I also love to watch film, listen to music or visiting to my sibling's house in my spare time. Other than that, I love to travel as well. My husband and I always spend our holidays to go to new places whether it's in our country or to go abroad.
+    
+    I took Psychology Counselling while I was in University. After I graduated, I work as a Counsellor in Juvenile Centre which is been under Social Welfare Department for about 5 years. I love my job because it gives me a lot of experiences and shows me a different range of life backgrounds and human behaviours specifically for the youth. All these experiences are useful to myself and make me realize how I should be grateful for having a nice and loving family.
+    
+    However, sometimes I've had a hard time since there are a lot of challenges as well. But even so, I've tried to look in a positive side, because I know dealing with human isn't an easy thing. In order to improve my work performance and myself, I believe there are still many things I have to learn, and need to strive for having a better life in the future.
+                                    <cite>&#8212; Eric, Small Business Owner</cite>
+                                </blockquote>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                    <img  class="img-thumbnail mx-auto d-block" width="152" height="113" src="file:///E:/photos/PRAJAWAL.jpeg">
+                            </div>
+                    </div>
+                </div>
+                
+                
+                
+            
+            </div> <!-- End of row -->
+    
+    </div> <!-- End jumbotron -->
+    
+    </div>  <!--End MOREABOUTUS section -->		
+       
 <!--END OF PARAGRAPH MODULES-->
 
 <!--START OF TABLE MODULE-->
+
+
+<div class="ourFavourites container text-center ">
+    <h4> OUR FAVOURITES </h4>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">FAVOURITE</th>
+          <th scope="col">MAITHREYA</th>
+          <th scope="col">TEHJAS</th>
+          <th scope="col">PRAJAWAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">FOOD</th>
+          <td>Biriyani</td>
+          <td>Samiya</td>
+          <td>Dosa</td>
+        </tr>
+        <tr>
+          <th scope="row">DRINK</th>
+          <td>Maaza</td>
+          <td>Frooti</td>
+          <td>Sarpath</td>
+        </tr>
+        <tr>
+          <th scope="row">SPORTS</th>
+          <td>Cricket</td>
+          <td>Goli</td>
+          <td>WWE</td>
+        </tr>
+         <tr>
+          <th scope="row">COLOUR</th>
+          <td>White</td>
+          <td>Blue</td>
+          <td>Blackish violet</td>
+        </tr>
+         <tr>
+          <th scope="row">ACTOR</th>
+          <td>Salman Khan</td>
+          <td>Rajini Kanth</td>
+          <td>Sharukh khan</td>
+        </tr>
+         <tr>
+          <th scope="row">ACTRESS</th>
+          <td>Mouni roy</td>
+          <td>Aishwarya Rai</td>
+          <td>Mia Khalifa</td>
+        </tr>
+         <tr>
+          <th scope="row">CARTOON</th>
+          <td>Choto Beam</td>
+          <td>Mickey Mouse</td>
+          <td>Tom and Jerry</td>
+        </tr>
+         <tr>
+          <th scope="row">Movie</th>
+          <td>Avengers</td>
+          <td>Kabali</td>
+          <td>Bahubali</td>
+        </tr>
+         <tr>
+          <th scope="row">Mobile</th>
+          <td>Samsung</td>
+          <td>Apple</td>
+          <td>China Set</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    </div>
+    
+    
+    
 <!--END OF TABLE MODULE-->
 
 <!--START OF FORM MODULES-->
+
+
+
+<div class=" container row">
+    <div class="col-md-4">
+    </div>
+        <div class=" contact col-md-8">
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5">
+    
+        <p class="h4 mb-4">Contact Us</p>
+        <input type="text"  class="form-control mb-4" placeholder="Name">
+        <input type="text"  class="form-control mb-4" placeholder="Email Id">
+         <input type="text"  class="form-control mb-4" placeholder="comments">
+        <!-- Sign in button -->
+        <button class="btn btn-info btn-block my-4" type="submit">Submit</button> 
+    </form>
+    <!-- Default form login -->
+    </div>
+    
+    </div>
+    
 <!--END OF FORM MODULES-->
 
 <!--START OF BUTTON-->
+<a href=" "><button type="button" class="btn btn-dark">NEXT PAGE</button></a>
 <!--END OF BUTTON-->
 
 <!-- START OF FOOTER-->
+<footer>
+    <div class="row justify-content-center">
+    
+    <div class="col-md-6 text-center">
+        <h3>Function Book</h3>
+            <p> At our core is a collection of design and development solutions
+            that represent everything your business needs to complete in the modern market place.</p>
+            <strong>Contact Info</strong>
+            <p>(888) 888-888<br> email@RPLTECHNO.com </p><hr >
+                <h5>
+                &copy;RPLTechno IT SERVICES PVT LTD.
+                </h5>
+    </div>
+    </div> 
+</footer>
+
 <!-- END OF FOOTER-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
